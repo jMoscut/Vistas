@@ -1,114 +1,70 @@
+:root{
+    --bs-container: #18253B;
+    --solusersa: #a3d2e6;
+    --solusersa-head: #00578a; 
+}
+
+.bg-container{
+    background-color: var(--bs-container);
+    color: antiquewhite;
+}
+
+body {
+    background-color: #F7F0C6;
+}
+
+:root {
+    --color-barra-lateral: #18253B;
+    --color-texto: #F7F0C6;
+    --color-texto-menu: #F7F0C6;
+    --color-boton-texto: #F7F0C6;
+
+}
+
 * {
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    list-style: none;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+   
+    height: 100vh;
+    width: 100%;
 
 }
 
-nav{
-    background: #18253B;
-    height: 80px;
-    width: 100%; 
+.barra-lateral {
+    width: 250px;
+    height: 100%;
+    padding: 20px 15px;
+    background-color: var(--color-barra-lateral);
 }
 
-.enlace{
-    position: absolute;
-    padding: 20px 50px;
-}
-
-.logo{
-    height: 60px;
+.mini-barra-lateral {
+    width: 80px;
     
 }
 
-nav ul{
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0px 5px;
-}
-nav ul li {
-    color: #F7F0C6;
-    font-size: 18px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-li a.active , li a:hover{
-    background: #DBE9FF;
-    transition: .5s;
-}
-
-.checkbtn{
-    font-size: 30px;
-    color: #F7F0C6;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check{
-    display: none;
-}
-
-section{
-    background: #F7F0C6;
-    background-size: cover;
-}
-
-@media (max-width: 952px) {
-    .enlace{
-        padding-left: 20px;
-
-    }
-    nav ul li a{
-        font-size: 16px;
-    }
-}
-
-@media (max-width:858px) {
-    .checkbtn{
-        display: block;
-
-    }
-    ul{
-        position: fixed;
-        width: 100vh;
-        height: 100vh;
-        background: #5D7599;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-}
-
-nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-}
-
-nav ul li a{
-    font-size: 20px;
+/*--------* nombre de la página*/
+.barra-lateral .nombre-pagina {
+    border: 2px solid red;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
 
 }
 
-li a:hover, li a.active{
-    background: none;
-    color: #F7F0C6;
+.barra-lateral .nombre-pagina ion-icon {
+    border: 2px solid slateblue;
+    min-width: 50px;
+    font-size: 40px;
+
+}
+.barra-lateral .nombre-pagina span{
+    border: 2px solid #F7F0C6;
+    font-size: 25px;
+    margin-left:5px ;
 }
 
-#check:checked ~ ul{
-    left: 0;
-    
-}

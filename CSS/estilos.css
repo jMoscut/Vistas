@@ -1,6 +1,6 @@
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 nav{
     background: #18253B;
     height: 80px;
-    width: 100px; 
+    width: 100%; 
 }
 
 .enlace{
@@ -19,8 +19,8 @@ nav{
 }
 
 .logo{
-    height: 40px;
-
+    height: 60px;
+    
 }
 
 nav ul{
@@ -31,7 +31,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0px 5px;
 }
 nav ul li {
     color: #F7F0C6;
@@ -42,7 +42,7 @@ nav ul li {
 }
 
 li a.active , li a:hover{
-    background-color: #DBE9FF;
+    background: #DBE9FF;
     transition: .5s;
 }
 
@@ -61,10 +61,11 @@ li a.active , li a:hover{
 }
 
 section{
-    background-color: #F7F0C6;
+    background: #F7F0C6;
+    background-size: cover;
 }
 
-@media (max-width:952px) {
+@media (max-width: 952px) {
     .enlace{
         padding-left: 20px;
 

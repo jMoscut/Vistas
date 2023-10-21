@@ -17,7 +17,11 @@
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
+                
               </li>
+              <li>
+                <a class="nav-link active" aria-current="page" href="#">Menú</a>
+            </li>
             </ul>
           </div>
         </div>
@@ -26,9 +30,31 @@
 <body>
     <div class="barra-lateral">
         <div class="nombre-pagina">
-            <ion-icon id="settns"name="settings-outline"></ion-icon>
-            <Span>Apex</Span>
+            <ion-icon id="menu" name="menu-outline"></ion-icon>
+          
         </div>
+        <nav>
+            <ul>
+              <li>
+                <a href="#">
+                  <ion-icon id="settns"name="settings-outline"></ion-icon>
+                <span>Mantenimiento</span>
+                </a>
+            </li>
+                <li>
+                    <a href="#">
+                      <ion-icon id="docc" name="documents-outline"></ion-icon> 
+                    <span>Análisis Técnico de Mercancias</span>
+                    </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <ion-icon id="user" name="person-circle-outline"></ion-icon>
+                  <span>Username</span>
+                  </a>
+              </li>
+            </ul>
+        </nav>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
